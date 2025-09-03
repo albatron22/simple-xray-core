@@ -22,6 +22,8 @@
 wget -qO- https://raw.githubusercontent.com/albatron22/simple-xray-core/refs/heads/main/xray-install | bash
 ```
 
+***Примечание***. при установке x-ray создается файл /usr/local/etc/xray/.keys, в нем необходимо перенести на следующую строчку параметр `shortsid` (видимо баг создания этого файла в последней версии x-ray). Также его нужно вручную вписать в файле конфигурации `/usr/local/etc/xray/config.json`
+
 ## Команды для управления пользователями
 
 **Вывести список всех клиентов:**
